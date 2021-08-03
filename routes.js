@@ -282,7 +282,7 @@ const routes = (app) =>{
     });
 
     // Routes Estudiante
-    app.get("/estudiante", (req, res) =>{
+    app.get("/estudiantes", (req, res) =>{
         ControllerEstudianteInstance.find(req,res);
     });
 

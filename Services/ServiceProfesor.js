@@ -1,3 +1,5 @@
+const Curso = require("../Model/Curso");
+
 class ServiceProfesor {
     constructor(Profesor) {
         this.Profesor = Profesor;
@@ -6,6 +8,7 @@ class ServiceProfesor {
     async find(query, select) {
         const params = {
             where: query,
+            // include:[{model:Curso}]
         };
         if(select){
             params.attributes = select.split(",");

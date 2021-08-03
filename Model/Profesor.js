@@ -1,4 +1,5 @@
 const { DataTypes } = require('sequelize');
+const Curso = require('./Curso');
 
 const Profesor = (sequalize)=>{
     const Profesor = sequalize.define(
@@ -10,6 +11,7 @@ const Profesor = (sequalize)=>{
         },
         {sequalize, tableName: 'profesor',timestamps: false}
     );
+    // Profesor.hasMany(Curso);
     return Profesor;
 }
 

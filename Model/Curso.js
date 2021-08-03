@@ -12,6 +12,7 @@ const Curso = (sequalize)=>{
         },
         {sequalize, tableName: 'curso',timestamps: false}
     );
+    // Curso.belongsTo(Profesor);
     return Curso;
 }
 
